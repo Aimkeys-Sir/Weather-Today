@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Today</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="index.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <div id="left" class="cont">
+        <div class="top-bar">
+            <div id="date">
+                <h2>July 2022</h2>
+                <h4>Saturday,Jul 4 2022</h4>
+            </div>
+            <div id="search-form">
+                <form action="submit">
+                    <input type="text" autocomplete="off" name="search" id="search" placeholder="Search any city">
+                </form>
+            </div>
+            <img src="./images/search.png" class="bell">
+            <img id="bell" class="bell" src="./images/bell.png">
+
+        </div>
+        <div class="bar-info">
+            <div>
+                <h1>Today Overview</h1>
+            </div>
+            <div id="city-div">
+                <h2 id="city"></h2>
+            </div>
+        </div>
+        <div class="content">
+            <div class="horizontal">
+                <div class="card">
+
+                    <div class="text">
+                        <h4>Wind speed</h4>
+                        <h2 id="wind-desc">14km/h</h2>
+                    </div>
+                    <div class="card-image">
+                        <img src="./images/windy.png" class="icons">
+                    </div>
+                    <div class="details">
+                        <h2 id="wind-dir"></h2>
+                    </div>
+
+                </div>
+                <div class="card" id="clouds-div">
+
+                    <div class="text">
+                        <h4 id="cloud-desc"></h4>
+                    </div>
+                    <div class="card-image">
+                        <img id="rain-icon" class="icons">
+                    </div>
+                    <div class="details">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <div class="card">
+
+                    <div class="text">
+                        <h4>Pressure</h4>
+                        <h2 id="pressure"></h2>
+                    </div>
+                    <div class="card-image">
+                        <img src="./images/pressure1.png" class="icons">
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="text">
+                        <h4>Humidity</h4>
+                        <h2 id="humidity">0.3</h2>
+                    </div>
+                    <div class="card-image">
+                        <img src="./images/humidity.png" class="icons">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="right" class="cont">
+        <div>
+            <h2>20C</h2>
+        </div>
+        <div></div>
+    </div>
+
+</body>
+
+</html>
